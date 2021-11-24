@@ -5,12 +5,15 @@
         "Nokia", 
         "Virat", 
         "Sachin", 
-        "Dhoni"
+        "Dhoni",
+        "Munaf",
+        "Saurav"
     );
 
-    foreach($names as $name)
-    {
-        echo $name . '<br />';
+    foreach($names as $name) {
+
+        echo $name . "<br />";
+
     }
 
 ?>
