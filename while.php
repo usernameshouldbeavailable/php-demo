@@ -1,14 +1,16 @@
 <?php
 
-    $i = 1;
+    echo "While Loop <br />";
+
+    $count = 11;
 
     // entry control loop
 
-    while( $i <= 10 ) {
+    while( $count <= 10 ) {
 
-        echo $i . '<br />';
+        echo $count . '<br />';
 
-        $i = $i + 1;
+        $count = $count + 1;
 
     }
 
