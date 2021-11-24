@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Check if you can vote</title>
+    <title>Login</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,71 +10,50 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    
-
     <div class="container">
 
         <div class="row">
 
+            <div class="col"></div>
             <div class="col">
-                <h1>Check if you can vote?</h1>
 
-                <form action="get.php" method="get">
+                <h1>Login</h1>
+
+
+                <form action="problemwithget.php">
 
                     <div class="form-group">
 
-                        <label for="">Enter your age</label>
+                        <label for="">Your Email</label>
 
-                        <input name="age" type="number" class="form-control" placeholder="Enter your age?">
+                        <input class="form-control" type="email" name="email" placeholder="example@domain.com" />
 
                     </div>
 
                     <div class="form-group">
 
-                        <label for="">Enter your name</label>
+                        <label for="">Your Password</label>
 
-                        <input name="name" type="text" class="form-control" placeholder="Enter your name?">
+                        <input class="form-control" type="password" name="password" placeholder="Password" />
 
                     </div>
 
                     <div class="form-group">
 
-                        <input type="submit" class="btn btn-primary" value="Check" />
+                        <input type="submit" value="Login" class="btn btn-primary btn-block">
 
                     </div>
 
-                    <?php
-                    
-                        if(isset($_GET['age']) && isset($_GET['name'])) { 
-
-                            $age = $_GET['age'];
-
-                            $name = $_GET['name'];
-
-                            if($age >= 18) {
-
-                                echo '<div class="alert alert-success">Hey ' . $name . ', you can vote</div>';
-
-                            } else {
-                                
-                                echo '<div class="alert alert-danger">Hey ' . $name . ', you cannot vote</div>';
-
-                            }
-
-                        } else {
-
-                        }
-
-                    ?>
 
                 </form>
 
             </div>
+            <div class="col"></div>
 
         </div>
 
-    </div>
 
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
