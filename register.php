@@ -12,6 +12,8 @@
 
         }
 
+        // if ( is_numeric($phone) == false )
+
         if(!is_numeric($phone)) {
 
             $errorMessage = "Please Enter a valid mobile number";
@@ -56,6 +58,8 @@
 
                     <?php
                         if(isset($_POST['phone'])) {
+
+                            // if ( is_null($errorMessage) == false )
 
                             if(!is_null($errorMessage)) {
 
