@@ -2,13 +2,9 @@
 
     session_start();
 
-    if(isset($_SESSION["useremail"])) {
+    if(!isset($_SESSION["useremail"])) {
 
-
-
-    } else {
-
-        header("Location: http://localhost/edunet/session_demo/login.php");
+        header("Location: login.php");
         exit();
 
     }

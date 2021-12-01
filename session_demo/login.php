@@ -24,7 +24,8 @@
 
             $_SESSION["useremail"] = $email;
 
-            header("Location: http://localhost/edunet/session_demo/profile.php");
+            header("Location: profile.php");
+            
             exit();
 
         } else {

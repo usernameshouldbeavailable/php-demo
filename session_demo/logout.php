@@ -4,7 +4,7 @@
 
     $_SESSION["useremail"] = null;
 
-    header("Location: http://localhost/edunet/session_demo/login.php");
+    header("Location: login.php");
     exit();
 
 ?>
